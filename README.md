@@ -19,7 +19,7 @@ The dashboard provides valuable insights into revenue, profit, customer behavior
 - Power BI
 - Power Query
 - DAX
-- Excel / CSV
+- CSV
 
 ---
 
@@ -87,18 +87,6 @@ Avg Revenue Per Customer =
 DIVIDE([Total Revenue], DISTINCTCOUNT(Customers[CustomerID]))
 ```
 
-### Running Total Revenue
-```DAX
-Running Revenue =
-CALCULATE(
-    [Total Revenue],
-    FILTER(
-        ALL(Dates),
-        Dates[Date] <= MAX(Dates[Date])
-    )
-)
-```
-
 ---
 
 ## Key Insights
@@ -113,6 +101,3 @@ CALCULATE(
 This dashboard helps businesses track sales trends, monitor profitability, identify growth opportunities, and make data-driven business decisions effectively.
 
 ---
-
-## Author
-Pragyan Parimita Behera
