@@ -109,11 +109,6 @@ CALCULATE(
 
 ---
 
-## Dashboard Preview
-(Add dashboard screenshot here)
-
----
-
 ## Conclusion
 This dashboard helps businesses track sales trends, monitor profitability, identify growth opportunities, and make data-driven business decisions effectively.
 
