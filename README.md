@@ -1,66 +1,76 @@
 # Sales Performance Analysis Dashboard
 
-## Project Overview
-This project focuses on analyzing sales performance using Power BI.  
-The dashboard provides valuable insights into revenue, profit, customer behavior, product performance, and regional sales trends to support business decision-making.
+## Overview
+The Sales Performance Analysis Dashboard is an interactive Power BI project designed to analyze and visualize business sales data.  
+This dashboard helps in monitoring revenue, profit, customer trends, product performance, and regional sales insights to support data-driven decision-making.
 
 ---
 
-## Objectives
-- Monitor overall sales performance
-- Analyze profit and revenue trends
+## Project Objectives
+- Analyze overall sales performance
+- Monitor revenue and profit trends
 - Identify top-performing products and customers
-- Compare regional sales performance
-- Track monthly and yearly growth
+- Compare sales across different regions
+- Track business growth over time
+- Generate actionable business insights
 
 ---
 
-## Tools & Technologies Used
+## Tools & Technologies
 - Power BI
 - Power Query
-- DAX
+- DAX (Data Analysis Expressions)
 - CSV
 
 ---
 
-## Dataset Files
-- sales.csv
-- customers.csv
-- products.csv
-- dates.csv
+## Dataset Information
+The project uses multiple datasets for data modeling and analysis:
+
+| Dataset | Description |
+|---|---|
+| sales.csv | Contains transaction-level sales data |
+| customers.csv | Customer-related information |
+| products.csv | Product and category details |
+| dates.csv | Date dimension table for time analysis |
 
 ---
 
-## Key KPIs
+## Data Cleaning & Transformation
+The following preprocessing steps were performed using Power Query:
+
+- Removed duplicate records
+- Handled missing/null values
+- Corrected data types
+- Standardized column names
+- Created relationships between tables
+- Performed date formatting
+- Cleaned inconsistent category values
+
+---
+
+## Data Model
+The dashboard follows a relational data model using:
+- Fact Table: Sales
+- Dimension Tables:
+  - Customers
+  - Products
+  - Dates
+
+Relationships were created to enable efficient filtering and analysis.
+
+---
+
+## Key Performance Indicators (KPIs)
+The dashboard tracks the following KPIs:
+
 - Total Revenue
 - Total Profit
 - Total Orders
 - Profit Margin
 - Average Revenue Per Customer
 - Monthly Sales Growth
-
----
-
-## Dashboard Features
-
-### Sales Analysis
-- Monthly and yearly revenue trends
-- Running total revenue analysis
-- Sales growth tracking
-
-### Product Analysis
-- Top-selling products
-- Category-wise sales performance
-- Product profit contribution
-
-### Customer Analysis
-- Revenue by customer
-- Top customers by sales
-- Customer purchasing patterns
-
-### Regional Analysis
-- Region-wise revenue and profit
-- Geographic sales comparison
+- Running Total Revenue
 
 ---
 
@@ -78,26 +88,69 @@ Total Profit = SUM(Sales[Profit])
 
 ### Profit Margin
 ```DAX
-Profit Margin = DIVIDE([Total Profit],[Total Revenue],0)
+Profit Margin =
+DIVIDE([Total Profit], [Total Revenue], 0)
 ```
 
 ### Average Revenue Per Customer
 ```DAX
 Avg Revenue Per Customer =
-DIVIDE([Total Revenue], DISTINCTCOUNT(Customers[CustomerID]))
+DIVIDE(
+    [Total Revenue],
+    DISTINCTCOUNT(Customers[CustomerID])
+)
 ```
 
 ---
 
+## Dashboard Features
+
+### Sales Analysis
+- Revenue trend analysis
+- Monthly and yearly sales comparison
+- Running total revenue tracking
+
+### Product Analysis
+- Top-selling products
+- Category-wise sales performance
+- Profit contribution by product category
+
+### Customer Analysis
+- Top customers by revenue
+- Customer purchase behavior
+- Revenue contribution analysis
+
+### Regional Analysis
+- Region-wise revenue comparison
+- Profit analysis by region
+- Geographic sales distribution
+
+---
+
 ## Key Insights
-- Technology category generated the highest revenue.
-- Western region contributed maximum sales.
-- Seasonal sales spikes observed during festival periods.
-- High-value customers contributed a significant share of total revenue.
+- Technology products generated the highest revenue.
+- Western region contributed the maximum sales.
+- Seasonal spikes were observed during festive months.
+- A small percentage of customers contributed a major share of total revenue.
+- Certain product categories showed high sales but low profit margins.
+
+---
+
+## Business Impact
+This dashboard enables businesses to:
+- Monitor sales performance effectively
+- Identify profitable products and regions
+- Improve customer targeting strategies
+- Support strategic business decisions
+- Track growth and operational efficiency
 
 ---
 
 ## Conclusion
-This dashboard helps businesses track sales trends, monitor profitability, identify growth opportunities, and make data-driven business decisions effectively.
+The Sales Performance Analysis Dashboard provides a comprehensive view of business performance through interactive visualizations and KPI tracking.  
+The project demonstrates skills in data cleaning, data modeling, DAX calculations, and dashboard design using Power BI.
 
 ---
+
+
+
