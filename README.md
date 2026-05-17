@@ -150,7 +150,3 @@ This dashboard enables businesses to:
 The Sales Performance Analysis Dashboard provides a comprehensive view of business performance through interactive visualizations and KPI tracking.  
 The project demonstrates skills in data cleaning, data modeling, DAX calculations, and dashboard design using Power BI.
 
----
-
-
-
