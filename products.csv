@@ -1,0 +1,26 @@
+ProductID,ProductName,Category,Price
+P101,Laptop,Electronics,1200
+P102,Headphones,Electronics,800
+P103,Smartphone,Electronics,1500
+P104,Office Chair,Furniture,300
+P105,Table,Furniture,1100
+P106,Keyboard,Electronics,150
+P107,Monitor,Electronics,400
+P108,Sofa,Furniture,2500
+P109,Bookshelf,Furniture,900
+P110,Printer,Electronics,700
+P111,Mouse,Electronics,80
+P112,Coffee Table,Furniture,650
+P113,Tablet,Electronics,950
+P114,Wardrobe,Furniture,3200
+P115,Desk Lamp,Furniture,120
+P116,T-Shirt,Clothing,40
+P117,Jeans,Clothing,70
+P118,Refrigerator,Appliances,1800
+P119,Microwave,Appliances,350
+P120,Cricket Bat,Sports,90
+P121,Football,Sports,45
+P122,Shampoo,Beauty,15
+P123,Face Wash,Beauty,12
+P124,Rice Bag,Grocery,55
+P125,Cooking Oil,Grocery,25
